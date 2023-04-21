@@ -1,8 +1,11 @@
-from scipy import stats
+﻿from scipy import stats
+
+
 rsv1 = stats.norm.rvs(loc=89.9,scale=11.3,size=20)
 rsv2 = stats.norm.rvs(loc=80.7,scale=11.7,size=20)
 rez = stats.ttest_ind(rsv1,rsv2)
 print(rez)
+
 
 #Индивидуальное задание
 """
@@ -22,4 +25,5 @@ N2=38
 rvs1 = stats.norm.rvs(loc=M1,scale=sd1,size=N1)
 rvs2 = stats.norm.rvs(loc=M2,scale=sd2,size=N2)
 rez2 = stats.ttest_ind(rvs1,rvs2)
+
 print(rez2)
